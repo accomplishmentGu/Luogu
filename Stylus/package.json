@@ -1,0 +1,48 @@
+{
+  "name": "Stylus",
+  "version": "1.5.23",
+  "description": "Redesign the web with Stylus, a user styles manager",
+  "license": "GPL-3.0-only",
+  "repository": "openstyles/stylus",
+  "author": "Stylus Team",
+  "dependenciesNotes": {
+    "codemirror": "WARNING! Always use an exact version and test it for a while before releasing"
+  },
+  "dependencies": {
+    "@eight04/draggable-list": "^0.3.0",
+    "codemirror": "5.65.2",
+    "db-to-cloud": "^0.7.0",
+    "jsonlint": "^1.6.3",
+    "less-bundle": "github:openstyles/less-bundle#v0.1.0",
+    "lz-string-unsafe": "^1.4.4-fork-1",
+    "stylelint-bundle": "^14.2.0",
+    "stylus-lang-bundle": "github:openstyles/stylus-lang-bundle#v0.54.7",
+    "usercss-meta": "^0.12.0",
+    "webext-launch-web-auth-flow": "^0.1.1"
+  },
+  "devDependencies": {
+    "archiver": "^4.0.1",
+    "eslint": "^7.20.0",
+    "fs-extra": "^9.0.0",
+    "glob": "^7.2.0",
+    "node-fetch": "^2.6.7",
+    "sync-version": "^1.0.1",
+    "web-ext": "^6.5.0"
+  },
+  "scripts": {
+    "lint": "eslint \"**/*.js\" --cache",
+    "test": "node tools/test.js && npm run lint",
+    "update-locales": "tx pull --all && node tools/fix-transifex.js",
+    "update-transifex": "tx push -s",
+    "build-vendor": "node tools/build-vendor",
+    "zip": "npm test && node tools/zip.js",
+    "start": "web-ext run",
+    "start-chrome": "web-ext run -t chromium",
+    "preversion": "npm test",
+    "version": "sync-version manifest.json && git add .",
+    "postversion": "npm run zip && git push --follow-tags"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  }
+}
