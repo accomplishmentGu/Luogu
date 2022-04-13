@@ -218,6 +218,12 @@ h5,
 h6 {
     font-weight: 600 !important;
 }
+* > h2:first-child {
+    margin-bottom: 1.6rem;
+}
+.card .color-default {
+    color: #5e72e4 !important;
+}
 /*--顶栏*/
 
 .lg-header,
