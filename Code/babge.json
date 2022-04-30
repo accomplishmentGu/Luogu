@@ -1,0 +1,21 @@
+{
+  "text": "perfect",
+  "lg4": {
+    "bg": "linear-gradient(to bottom right, lightpink, hotpink, red, orange, yellow)",
+    "fg": "",
+    "ft": "",
+    "fw": "600",
+    "fs": "15px",
+    "text": "perfect",
+    "bd": "5px double"
+  },
+  "fw": "600",
+  "font": "",
+  "fg": "",
+  "border": "",
+  "bg": "linear-gradient(to bottom right, lightpink, hotpink, red, orange, yellow)",
+  "ts": 1651222222,
+  "bd": "5px double",
+  "ft": "",
+  "fs": ""
+}
