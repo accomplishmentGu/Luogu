@@ -14,8 +14,8 @@
   "fg": "",
   "border": "",
   "bg": "linear-gradient(to bottom right, lightpink, hotpink, red, orange, yellow)",
-  "ts": 1651222222,
+  "ts": 1651312231,
   "bd": "5px double",
   "ft": "",
-  "fs": ""
+  "fs": "15px"
 }
