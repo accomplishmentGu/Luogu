@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Luogu Search AnyWhere
-// @namespace    https://greasyfork.org/zh-CN/scripts/442720/
+// @namespace    https://greasyfork.org/zh-CN/scripts/446614
 // @version      0.3.4-X4
 // @description  Search AnyWhere in Luogu!
 // @author       tiger2005 & d0j1a_1701 & accomplishment
