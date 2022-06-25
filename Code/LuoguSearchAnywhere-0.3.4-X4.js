@@ -6,7 +6,7 @@
 // @author       tiger2005 & d0j1a_1701 & accomplishment
 // @match        https://www.luogu.com.cn/*
 // @grant        GM.xmlHttpRequest
-// @connect      https://fx白丝.ml/
+// @connect      xn--fx-ex2c330n.ml
 // @icon         https://cdn.luogu.com.cn/upload/usericon/3.png
 // @license      MIT
 // @require      https://code.jquery.com/jquery-3.6.0.min.js
@@ -57,7 +57,7 @@
                 settings[key] = val;
         }
         localStorage.setItem("lsaw_settings", JSON.stringify(settings));
-        //console.log(document.getElementsByTagName('head')[0].innerHTML = document.getElementsByTagName('head')[0].innerHTML.replace('default-src \'unsafe-inline\' luogu.com.cn *.luogu.com.cn luogu.org *.luogu.org *.cnzz.com luoguprivate.oss-cn-hangzhou.aliyuncs.com luogu.oss-cn-hangzhou.aliyuncs.com wss: blob:; img-src * data:; font-src * data:; frame-src https://player.bilibili.com https://www.bilibili.com','default-src \'unsafe-inline\' luogu.com.cn *.luogu.com.cn luogu.org *.luogu.org *.cnzz.com luoguprivate.oss-cn-hangzhou.aliyuncs.com luogu.oss-cn-hangzhou.aliyuncs.com fx白丝.ml wss: blob:; img-src * data:; font-src * data:; frame-src https://player.bilibili.com https://www.bilibili.com'));
+        //console.log(document.getElementsByTagName('head')[0].innerHTML = document.getElementsByTagName('head')[0].innerHTML.replace('default-src \'unsafe-inline\' luogu.com.cn *.luogu.com.cn luogu.org *.luogu.org *.cnzz.com luoguprivate.oss-cn-hangzhou.aliyuncs.com luogu.oss-cn-hangzhou.aliyuncs.com wss: blob:; img-src * data:; font-src * data:; frame-src https://player.bilibili.com https://www.bilibili.com','default-src \'unsafe-inline\' luogu.com.cn *.luogu.com.cn luogu.org *.luogu.org *.cnzz.com luoguprivate.oss-cn-hangzhou.aliyuncs.com luogu.oss-cn-hangzhou.aliyuncs.com xn--fx-ex2c330n.ml wss: blob:; img-src * data:; font-src * data:; frame-src https://player.bilibili.com https://www.bilibili.com'));
         let discuss_link = document.querySelectorAll('a');
         for(let link of discuss_link){
             if(link.href.indexOf('/discuss/show?postid')==-1) continue;
@@ -66,7 +66,7 @@
             for(let x of d_id_l) d_id += x;
             GM.xmlHttpRequest({
                     method: "get",
-                    url: `https://fx白丝.ml/show.php?url=https://www.luogu.com.cn/discuss/${d_id}`,
+                    url: `https://xn--fx-ex2c330n.ml/show.php?url=https://www.luogu.com.cn/discuss/${d_id}`,
                     onload: function(res){
                         if(res.status != 200){
                             return;
@@ -964,7 +964,7 @@
             if(settings.lsawDiscussDisplay != false){
                 GM.xmlHttpRequest({
                     method: "get",
-                    url: `https://fx白丝.ml/search.php?s=${info}`,
+                    url: `https://xn--fx-ex2c330n.ml/search.php?s=${info}`,
                     headers: {
                         "Content-Type": "text/html"
                     },
@@ -996,7 +996,7 @@
                                         type: 'GET',
                                         success: function(json){
                                             if(first==true){
-                                                discussHtml = `<div style='text-align: left; margin-bottom: 10px; width: 100%; font-size: 18px; font-weight: bold'>讨论<a href="https://fx白丝.ml/search.php?s=${info}" style="cursor: pointer; float: right; font-weight: normal !important" class="searchShowProblems">查看所有 ${discuss_a.length} 个保存的讨论</a></div>`;
+                                                discussHtml = `<div style='text-align: left; margin-bottom: 10px; width: 100%; font-size: 18px; font-weight: bold'>讨论<a href="https://xn--fx-ex2c330n.ml/search.php?s=${info}" style="cursor: pointer; float: right; font-weight: normal !important" class="searchShowProblems">查看所有 ${discuss_a.length} 个保存的讨论</a></div>`;
                                                 first = false;
                                             }
                                             json = json.users;
